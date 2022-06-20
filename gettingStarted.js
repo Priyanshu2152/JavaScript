@@ -91,7 +91,7 @@
 
 
 //FILE SYsTEm
-let fs = require("fs");
+//let fs = require("fs");
 // let content = fs.readFileSync("readMe.txt", "UTF8");
 // console.log(content);
 
@@ -122,4 +122,100 @@ let fs = require("fs");
 // let addreas = path.join(folderName, nextFolderName, childFolder, actualFolder);
 // console.log(addreas);
 
+//...............................................................................................
+// let randomPath = "/Users/priyanshurana/JavaScript/fileSystemOrganizer/commands/util.js";
 
+// let isFile = fs.lstatSync(randomPath).isFile();
+// let isDirectory = fs.lstatSync(randomPath).isDirectory();
+// console.log("It is path of file: ", isFile, "It is path of directory: ", isDirectory);
+//..............................            .......................................................
+
+// copy file from another foler
+// let srcFilePath = "/Users/priyanshurana/JavaScript/export/client.js";
+// let destFilePath = "/Users/priyanshurana/JavaScript/clientCopy.js"
+
+// fs.copyFileSync(srcFilePath, destFilePath);
+// console.log("File successfully copied");
+//.................................................................................................
+
+// console.log("dirname", __dirname);
+// console.log("dirName", process.cwd());
+//..................................................................................................
+// console.log("fileName", __filename);
+//.................................................................
+// function fn(){
+//     console.log("am function");
+// }
+
+// let newfn = fn;
+
+// newfn();
+//................................................>>>>>>>>>...........................................
+// let a = [2, 3 , 4]; // assign
+// let b = [5, 6, 7, 8];
+// a = b;  // assign b into a
+// console.log("a = ", a);
+//.....................................................................................................
+// function chotaFn(){
+//     console.log("chota funnnnnn");
+// }
+// function fn(param){
+//     console.log("I am get a function");
+//     console.log("param", param);
+//     param();
+// }
+// fn(chotaFn);
+//................................................................
+// function printArr(){
+//     let arr = [];
+
+//     for(let i = 0;i<3; i++){
+//         function fn(){
+//             console.log(i);
+//         }
+//         arr.push(fn);
+//     }
+//     return arr;
+//  }
+//  let arrFn = printArr();
+ 
+//  arrFn[0]();
+//  arrFn[1]();
+// const fs = require("fs");
+// console.log("before");
+// fs.readFile("f1.txt", frConf);
+//  console.log("after");
+
+//  function frConf(err, data){
+//      if(err){
+//          console.log("err", err);
+//      }else{
+//          console.log("data "+ data);
+//      }
+
+
+
+//      }
+//      for(let i = 0; i<10; i++){
+//          console.log("i", i);
+//      }
+ 
+
+   let name = "roorkee";
+
+
+function rainDanace(arr){
+      var total = 0;
+     for(let v in arr){
+        total += arr[v];
+     }
+     var size = arr.length;
+
+    return total/size;
+    
+     
+     
+}
+let arrrr = new Array(1, 2, 3, 4, 5)
+let averg = rainDanace(arrrr);
+console.log(name, averg);
